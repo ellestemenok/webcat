@@ -1,0 +1,282 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    font-size: 40px;
+    position: absolute;
+    left: 424px;
+    top: 70px;
+}
+
+#description {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 424px;
+    top: 125px;
+}
+
+#main-icon {
+    margin-left: 208px;
+    width: 220px;
+    height: 220px;
+}
+
+hr {
+    margin-top: 0px;
+    color: black;
+    width: 85%;
+}
+
+.navigation-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navigation-list li {
+    padding: 10px 20px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+    margin: 5px; 
+    display: inline;
+    margin-right: 30px;
+}
+
+.navigation-list li:last-child {
+    margin-right: 0px;
+}
+
+.navigation-list li:hover {
+    background-color: #FFEBCD;    
+    border: 1px solid #B19672;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.navigation-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .main-kitty {
+    height: 850px;
+    width: 100%;
+    background-image: url(../img/maincat.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.wrapper {
+	height: 540px;
+	margin: 0px auto 0;
+	position: relative;
+	width: 100%;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+}
+
+.slides {
+    position: absolute;
+    z-index: 0;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide1 {
+    background-image: url('../img/maincat2.jpg');
+}
+
+.slide2 {
+    background-image: url('../img/maincat1.png'); 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+    bottom: 5%;
+    z-index: 2;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 10px;
+    border-radius: 50%;
+    transition: background ease-in-out .5s;
+}
+
+.wrapper label:after {
+	border: 3px solid #B19672;
+	content: " ";
+	display: block;
+	height: 20px;
+	position: absolute;
+	width: 20px;
+	border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper label:hover {
+    background: #4d4131;
+    transition: all 0.4s ease;
+}
+
+#slide1:checked ~ .slider .slide1,
+#slide2:checked ~ .slider .slide2,
+#slide3:checked ~ .slider .slide3,
+#slide4:checked ~ .slider .slide4,
+#slide5:checked ~ .slider .slide5 {
+    opacity: 1;
+    z-index: 1;
+}
+
+.page-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 24px;
+}
+
+.breeds-page {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#breedcat-image {
+    width: 500px;
+    height: 500px;
+    margin-right: 40px;
+    background-size: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.breeds-table, .breeds-table td {
+    border: 2px solid #B19672;
+    border-collapse: collapse;
+}
+
+.breeds-table td {
+    width: 250px;
+    padding: 10px 10px 10px 20px;
+}
+
+.breeds-table #tablehead {
+    font-weight: bold;
+    color:#B19672;
+    background-color: #FFEBCD;    
+    text-align: center;
+}
+
+.breeds-table th:first-child, .breeds-table td:first-child {
+    font-weight: bold;
+}
+
+.breeds-table tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+
+.article-page {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-card {
+    margin-left: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0, 0.1);
+}
+
+.article-card:first-child {
+    margin-left:0px;
+}
+
+.article-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-card h3 {
+    font-size:20px;
+    font-weight:bold;
+    text-align:left;
+    margin:10px;
+}
+
+.article-card p {
+    text-align: left;
+    margin: 10px;
+    max-width: 335px;
+    max-height: 65px;
+}
+
+.article-card img {
+    border: 0px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.cat-form-container form {
+    display: flex;
+    margin: 10px 0 10px 35%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cat-form-container form input, select, textarea {
+    margin: 10px;
+}
+
+.cat-form-container input, select {
+    width: 300px;
+}
+
+.cat-form-container textarea {
+    width: 600px;
+}
+
+
+#image-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#uploaded-image {
+    width: 20%;
+}

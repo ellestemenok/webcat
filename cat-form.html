@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Все о кошках</title>
+        <link rel="icon" href="icons/headicon.webp">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <img id="main-icon" src="icons/istockphoto-662195090-170667a.jpg">
+            <div id="title">Все о кошках</div>
+            <div id="description">Все статьи о кошках и котятах: рекомендации по кормлению, 
+                уходу, воспитанию.</div>
+        </header>
+
+        <hr>
+
+        <nav>
+            <ul class="navigation-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="cat-breeds.html">Породы кошек</a></li>
+                <li><a href="selection-n-acquisition.html">Выбор и приобретение</a></li>
+                <li>Здоровье кошек</li>
+                <li><a href="cat-form.html">Напишите о своей кошке</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-title">Расскажите нам о своей кошке! 😺</div>                
+            <div id="image-container">
+                <img id="uploaded-image" src="icons/headicon.webp" alt="Загруженное изображение">
+            </div>
+            <div class="cat-form-container">
+                <form method="post" enctype="multipart/form-data">
+                    <label for="photo">Фотография кошки:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+                    <label for="name">Кличка кошки:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="age">Возраст кошки:</label>
+                    <input type="number" id="age" name="age" required>
+        
+                    <label for="breed">Порода кошки:</label>
+                    <select id="breed" name="breed" required>
+                        <option value="Без породы">Без породы</option>
+                        <option value="Абиссинская кошка">Абиссинская кошка</option>
+                        <option value="Аравийский мау">Аравийский мау</option>
+                        <option value="Бенгальская кошка">Бенгальская кошка</option>
+                        <option value="Донской сфинкс">Донской сфинкс</option>
+                        <option value="Канаани">Канаани</option>
+                        <option value="Ликои">Ликои</option>
+                        <option value="Мейн-кун">Мейн-кун</option>
+                        <option value="Петерболд">Петерболд</option>
+                        <option value="Рэгдолл">Рэгдолл</option>
+                        <option value="Чаузи">Чаузи</option>
+                        <option value="Японский бобтейл">Японский бобтейл</option>
+                    </select>
+        
+                    <label for="story">Расскажите о вашей кошке:</label>
+                    <textarea id="story" name="story" rows="4" required></textarea>
+        
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </main>
+
+
+        <script>
+            document.getElementById('photo').addEventListener('change', function() {
+                var uploadedImage = document.getElementById('uploaded-image');
+                var fileInput = this;
+        
+                if (fileInput.files && fileInput.files[0]) {
+                    var reader = new FileReader();
+        
+                    reader.onload = function(e) {
+                        uploadedImage.src = e.target.result;
+                    };
+        
+                    reader.readAsDataURL(fileInput.files[0]);
+                }
+            });
+        </script>
+    </body>
+</html>
