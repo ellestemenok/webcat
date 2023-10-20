@@ -209,12 +209,13 @@ input[type="radio"] {
 
 .article-page {
     display: flex;
-    margin: auto;
-    justify-content: center;
+    margin: 0 5% 0 7%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .article-card {
+    margin-right: 20px;
     margin-left: 20px;
     border: 1px solid #DBDBDB;
     border-radius: 16px;
@@ -222,9 +223,9 @@ input[type="radio"] {
     box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0, 0.1);
 }
 
-.article-card:first-child {
-    margin-left:0px;
-}
+/* .article-card:last-child {
+    margin-right:0px;
+} */
 
 .article-card a {
     text-decoration: none;
