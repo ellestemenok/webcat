@@ -310,3 +310,62 @@ input[type="radio"] {
 #uploaded-image {
     width: 20%;
 }
+
+
+
+.cat-page-picture {
+    width:100%;
+    height: 500px;
+    background-image: url('../img/abyssinian-cat-page-picture.jpg');
+    background-position: 0 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article-caption {
+    margin-left: 500px;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+
+.cat-info-table-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cat-info-table, .cat-info-table td {
+    border: 2px solid #B19672;
+    border-collapse: collapse;
+}
+
+.cat-info-table td {
+    width: 250px;
+    padding: 10px 10px 10px 20px;
+}
+
+.cat-info-table td:first-child  {
+    font-weight: 900;
+}
+
+.cat-info-table td:last-child  {
+    text-align: center;
+}
+
+.cat-page-text {
+    margin: 20px 500px 20px 500px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.cat-page-picture-in-article {
+    height: 450px;
+    margin: 20px 500px 20px 500px;
+    background-image: url('../img/image 1.png');
+    background-position: 0 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
