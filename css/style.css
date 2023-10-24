@@ -8,6 +8,7 @@ body {
     position: absolute;
     left: 424px;
     top: 70px;
+    font-weight: 900;
 }
 
 #description {
@@ -23,6 +24,43 @@ body {
     width: 220px;
     height: 220px;
 }
+
+#nav-toggle {
+    display: none;
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    background:#4d4131;
+    cursor: pointer;
+    }
+    #nav-toggle span {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    background: white;
+    }
+    #nav-toggle span:before, #nav-toggle span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    }
+    .nav-toggle span:before {
+        top: -10px;
+        }
+        .nav-toggle span:after {
+        bottom: -10px;
+        }
 
 hr {
     margin-top: 0px;
@@ -368,4 +406,48 @@ input[type="radio"] {
     background-position: 0 15%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+@media (max-width: 1050px) {
+    #title {
+        left: 110px;
+        top: 10px;
+        font-size:medium;
+    }
+    
+    #description {
+        left: 110px;
+        top: 30px;
+        font-size: smaller;
+        width: auto;
+        margin-right: 60px;
+    }
+    
+    #main-icon {
+        margin-left: 25px;
+        width: 75px;
+        height: 75px;
+    }
+
+    nav {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    #nav-toggle {
+        display: block;
+    }
+
+    .navigation-list {
+        display: block;
+    }
+
+    .slides {
+        height: 100vw;
+        width: 110vw;
+
+    }
+
 }
