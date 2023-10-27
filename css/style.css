@@ -251,6 +251,15 @@ input[type="radio"] {
     border-collapse: collapse;
 }
 
+.breeds-table a {
+    color: black;
+    text-decoration: none;
+}
+
+.breeds-table a:hover {
+    text-decoration:underline;
+}
+
 .breeds-table td {
     width: 250px;
     padding: 10px 10px 10px 20px;
@@ -397,6 +406,21 @@ input[type="radio"] {
     margin: 20px 500px 20px 500px;
     text-align: justify;
     line-height: 150%;
+}
+
+.cat-page-list {
+    margin: 20px 500px 20px 500px;
+    list-style-image: url("../icons/icon-grey-paw.svg");
+    list-style-position: inside;
+}
+
+.cat-page-list ul {
+    padding: 0%;
+}
+
+.cat-page-list li {
+    padding-bottom: 10px;
+    padding-left: 35px;
 }
 
 .cat-page-picture-in-article {
