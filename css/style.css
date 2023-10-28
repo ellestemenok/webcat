@@ -142,7 +142,7 @@ hr {
 } */
 
 .wrapper {
-	height: 540px;
+	height: 700px;
 	margin: 0px auto 0;
 	position: relative;
 	width: 100%;
@@ -169,11 +169,19 @@ hr {
 }
 
 .slide1 {
-    background-image: url('../img/maincat2.jpg');
+    background-image: url(https://www.vets4pets.com/siteassets/species/cat/kitten/tiny-kitten-in-sunlight.jpg?w=585&scale=down);
 }
-
 .slide2 {
-    background-image: url('../img/maincat1.png'); 
+    background-image: url(https://kb.rspca.org.au/wp-content/uploads/2018/11/kitten-in-bed.jpg);
+}
+.slide3 {
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg);
+}
+.slide4 {
+    background-image: url(https://www.purina-arabia.com/sites/default/files/2020-12/Kitten%20Socialisation%20Teach%20Your%20Cat%20the%20Basic%20Life%20SkillsHERO.jpg);
+}
+.slide5 {
+    background-image: url(https://media.newyorker.com/photos/5ab95b9e8d2914101d1816ee/16:9/w_1920,h_1080,c_limit/Obsessions-How-Cats-Tamed-Us.jpg);
 }
 
 input[type="radio"] {
@@ -360,8 +368,16 @@ input[type="radio"] {
 
 
 
+.cat-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+}
+
+
 .cat-page-picture {
-    width:100%;
     height: 500px;
     background-image: url('../img/abyssinian-cat-page-picture.jpg');
     background-position: 0 15%;
@@ -369,8 +385,8 @@ input[type="radio"] {
     background-size: cover;
 }
 
+
 .article-caption {
-    margin-left: 500px;
     margin-top: 50px;
     font-weight: 900;
     font-size: 36px;
@@ -381,7 +397,6 @@ input[type="radio"] {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    justify-content: center;
 }
 
 .cat-info-table, .cat-info-table td {
@@ -403,20 +418,31 @@ input[type="radio"] {
 }
 
 .cat-page-text {
-    margin: 20px 500px 20px 500px;
+    margin: auto;
+    margin-top: 20px;
+    width: 940px;
     text-align: justify;
     line-height: 150%;
+    word-wrap:normal;
 }
 
 .cat-page-list {
-    margin: 20px 500px 20px 500px;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    margin-top:20px;
     list-style-image: url("../icons/icon-grey-paw.svg");
     list-style-position: inside;
 }
 
-.cat-page-list ul {
-    padding: 0%;
-}
+    .cat-page-list ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align:left;
+        padding: 0%;
+        width:940px;
+    }
 
 .cat-page-list li {
     padding-bottom: 10px;
@@ -425,6 +451,7 @@ input[type="radio"] {
 
 .cat-page-picture-in-article {
     height: 450px;
+    width: 940px;
     margin: 20px 500px 20px 500px;
     background-image: url('../img/image 1.png');
     background-position: 0 15%;
@@ -469,8 +496,7 @@ input[type="radio"] {
     }
 
     .slides {
-        height: 100vw;
-        width: 110vw;
+        height:700px;
 
     }
 
